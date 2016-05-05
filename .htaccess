@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^stud10.php1601.uitclassroom.com$ [NC]
+RewriteRule ^(.*)$ http://www.stud10.php1601.uitclassroom.com/$1 [R=301,L]
+#RewriteRule .*index [L] 
+ErrorDocument 404 /index.php
